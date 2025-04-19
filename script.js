@@ -84,7 +84,7 @@ function renderPosts() {
     });
 }
 
-function handleLikeClick(event) {
+function handleLikeClick() {
     const index = parseInt(this.dataset.index);
     const post = posts[index];
     const heartIcon = this.querySelector('.like-icon');
