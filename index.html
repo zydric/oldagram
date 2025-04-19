@@ -11,40 +11,54 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <img src="./images/logo.png" alt="oldagram logo" class="logo">
-            <img src="./images/user-avatar.png" alt="user-avatar" class="user-avatar">
+        <header class="padding">
+            <ul>
+                <li>
+                    <a href="#" target="_blank"> 
+                        <img src="./images/logo.png" alt="oldagram logo" class="logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank"> 
+                        <img src="./images/user-avatar.png" alt="user-avatar" class="avatar user-avatar">
+                    </a>
+                </li>
+            </ul>
         </header>
     
-        <main class="post">
-            <section class="post-header">
-                <img src="./images/avatar-vangogh.jpg" alt="van gogh avatar profile picture" class="author-avatar">
-                <div class="post-author-details">
-                    <p class="post-author">Vincent Van Gogh</p>
-                    <p class="post-location">Zundert, Netherlands</p>
-                </div>
-            </section>
-
-            <section class="post-image">
-                <img src="./images//post-vangogh.jpg" alt="">
-            </section>
-
-            <section class="post-buttons">
-                <ul>
-                    <li class="react-btn"><img src="./images/icon-heart.png" alt=""></li>
-                    <li class="comment-btn"><img src="./images/icon-comment.png" alt=""></li>
-                    <li class="share-btn"><img src="./images/icon-dm.png" alt=""></li>
+        <main class="post-content">
+            <section class="padding post-author-info">
+                <img src="./images/avatar-vangogh.jpg" alt="van gogh avatar profile picture" class="avatar author-avatar">
+                <ul class="post-author-details">
+                    <li class="post-author">Vincent Van Gogh</li>
+                    <li class="post-location">Zundert, Netherlands</li>
                 </ul>
-                <p class="post-react-count">21,492</p>
             </section>
 
-            <section class="post-captions">
-                <p class="post-author-username">vincey1853</p>
-                <p class="caption">just took a few mushrooms lol</p>
-            </section>
-            
-        </main>
+            <!-- <section class="post-image"> -->
+                <img class="post-img" src="./images//post-vangogh.jpg" alt="portrait painting of Van Gogh">
+            <!-- </section> -->
+
+            <section class="padding post-container">
+                <section class="post-interaction-area">
+                    <ul class="post-buttons">
+                        <li class="btn like-btn btn-toggle"><img class="icon" src="./images/icon-heart.png" alt=""></li>
+                        <li class="btn comment-btn"><img class="icon" src="./images/icon-comment.png" alt=""></li>
+                        <li class="btn share-btn"><img class="icon" src="./images/icon-dm.png" alt=""></li>
+                    </ul>
+                    <p class="like-count"><span>21,492</span> likes</p>
+                </section>
     
+                <section class="post-description">
+                    <p class="caption">
+                        <span class="post-author-username">
+                            <a href="#" target="_blank" title="post-author-user">vincey1853</a>
+                        </span>  
+                        just took a few mushrooms lol
+                    </p>
+                </section>
+            </section>
+        </main>
     </div>
 </body>
 </html>
