@@ -28,3 +28,17 @@ const posts = [
         likes: 152,
     },
 ];
+
+
+const likeBtn = document.getElementById('toggle-icon');
+const interactionAreaEl = document.getElementById('post-interaction-area');
+let likeCount = 0;
+
+likeBtn.addEventListener('click', function () {
+    likeBtn.classList.toggle('active');
+    likeCount++;
+    interactionAreaEl.innerHTML +=
+        likeCount > 1
+            ? `<p class="like-count"><span>${likeCount}</span> likes</p>`
+            : `<p class="like-count"><span>${likeCount}</span> like</p>`;
+});
