@@ -76,6 +76,15 @@ function renderPosts() {
         </section>`;
 
         postsContainer.insertAdjacentHTML('beforeend', postHTML);
+
+        const currentPost = postsContainer.lastElementChild;
+        const postImg = currentPost.querySelector('.post-img');
+
+        postImg.addEventListener('dblclick', () => {
+            const likeBtn = currentPost.querySelector('.like-btn');
+            likeBtn.click();
+        });
+        
     });
 
     const likeButtons = document.querySelectorAll('.like-btn');
